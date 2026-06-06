@@ -5,86 +5,62 @@
     <title>Fenti Irnawati - Profile</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav><h1>Fenti Irnawati | 058248498</h1></nav>
+    <nav>
+        <h1>Fenti Irnawati | 058248498</h1>
+    </nav>
 
     <section id="about">
         <img src="Untitled design (4).png" alt="Foto Profil" class="profile-pic">
         <h2>Sampurasun</h2>
         <p>Mahasiswa, Asisten Peneliti, AI Enthusiast.</p>
-        <a href="https://www.linkedin.com/in/fenti-irnawati-supandi">LinkedIn Profile</a>
+        <a href="https://www.linkedin.com/in/fenti-irnawati-supandi" target="_blank">
+            LinkedIn Profile
+        </a>
     </section>
 
     <section id="news">
         <h2>Kegiatan Terbaru</h2>
         <img src="ekraf.jpeg" alt="Web3" class="news-pic">
-        <a href="https://ekraf.go.id/news/indonesia-dukung-talenta-web3-nasional-lewat-protocol-camp-dan-southeast-asia-blockchain-week-2026">Baca Selengkapnya</a>
+        <a href="https://ekraf.go.id/news/indonesia-dukung-talenta-web3-nasional-lewat-protocol-camp-dan-southeast-asia-blockchain-week-2026" target="_blank">
+            Baca Selengkapnya
+        </a>
     </section>
 
-<section id="quiz">
-    <h2>Jawaban Tugas</h2>
-    <div class="grid">
-        <!-- Jawaban 1 -->
-        <div class="box">
-            <h3>Soal 1</h3>
-            <p>Perencanaan & Persiapan Server: Landing Page Tugas 3
-Dalam pengerjaan Tugas 3 ini, saya melakukan perencanaan server dengan pendekatan Serverless Architecture, di mana use case yang saya bangun adalah landing page akademik yang interaktif untuk menampilkan biodata dan jawaban kuis. Berikut adalah alur perencanaan dan persiapan yang saya lakukan:
+    <section id="quiz">
+        <h2>Jawaban Tugas</h2>
 
-Pemilihan Arsitektur Serverless: Saya memilih menggunakan Vercel karena arsitekturnya yang serverless. Dengan ini, saya tidak perlu direpotkan dengan manajemen OS server atau hardware fisik, karena seluruh pengelolaan infrastruktur sudah ditangani secara otomatis oleh cloud provider.
+        <div class="grid">
 
-Implementasi Workflow CI/CD: Workflow yang saya terapkan adalah CI/CD (Continuous Integration/Continuous Deployment). Dalam proses ini, setiap kode yang saya tulis langsung saya push ke GitHub, yang kemudian memicu Vercel untuk mendeteksi perubahan, melakukan build otomatis, dan langsung menayangkan pembaruan tersebut di internet.
+            <div class="box">
+                <h3>Soal 1</h3>
+                <p>
+Perencanaan & Persiapan Server: Landing Page Tugas 3  
+Dalam pengerjaan Tugas 3 ini, saya melakukan perencanaan server dengan pendekatan Serverless Architecture...
+                </p>
+                <img src="alur23.png" alt="Jawaban 1">
+            </div>
 
-Struktur Arsitektur Sistem:
+            <div class="box">
+                <h3>Soal 2</h3>
+                <p></p>
+                <a href="https://github.com/ambufenn/058248498" target="_blank">
+                    Github Code Server
+                </a>
+                <img src="jawaban2.jpg" alt="Jawaban 2">
+            </div>
 
-Front-End Layer: Saya menyusun tampilan statis seperti index.html, style.css, dan seluruh aset gambar agar dilayani langsung oleh Vercel Edge Network untuk menjamin kecepatan akses.
+            <div class="box">
+                <h3>Soal 3</h3>
+                <p>
+Laporan Pemetaan Tata Kelola TI: Proyek "Pojok Tugas"...
+                </p>
+                <img src="Screenshot 2026-06-06 155425.png" alt="Jawaban 3">
+            </div>
 
-Back-End Layer: Untuk logika backend, saya menempatkannya di folder /api (contohnya comment.js). Vercel secara cerdas mengenali ini sebagai Serverless Function yang hanya aktif saat ada request (seperti pengiriman komentar), sehingga penggunaan sumber daya menjadi sangat efisien.
-
-Keamanan dan Manajemen: Keamanan server telah terjamin secara auto-secure berkat sertifikat SSL/HTTPS dari Vercel. Saya juga menggunakan GitHub sebagai version control yang memungkinkan saya untuk melakukan update atau rollback kapan saja dengan mudah.
-
-Alur Data: Alur kerja saya dimulai saat pengguna mengakses landing page -> request dikirim ke Vercel -> Vercel menyajikan file statis kepada browser -> jika terdapat interaksi pada form komentar, request diproses secara dinamis melalui Serverless Function di folder /api.
-
-Kesimpulan:
-Perencanaan yang saya lakukan berfokus pada otomatisasi workflow. Dengan mengintegrasikan GitHub dan Vercel, landing page tugas saya tidak hanya fungsional secara akademik, tetapi juga memiliki arsitektur yang modern, aman, dan sangat mudah untuk dikelola.</p>
-            <img src="alur23.png" alt="Jawaban 1" style="width:100%; border-radius:5px;">
         </div>
-        <!-- Jawaban 2 -->
-        <div class="box">
-            <h3>Soal 2</h3>
-            <p></p>
-              <a href="https://github.com/ambufenn/058248498>Github-Code-Server</a>
-            <img src="jawaban2.jpg" alt="Jawaban 2" style="width:100%; border-radius:5px;">
-        </div>
-        <!-- Jawaban 3 -->
-        <div class="box">
-            <h3>Soal 3</h3>
-            <p>Laporan Pemetaan Tata Kelola TI: Proyek "Pojok Tugas"
-Deskripsi: Platform digital untuk pengumpulan tugas, verifikasi nilai, dan notifikasi otomatis bagi orang tua.
-
-a. Keselarasan Strategi
-Saya membangun sistem ini untuk mendigitalisasi alur pengumpulan tugas agar lebih efisien dan terstruktur.
-
-b. Penciptaan Nilai
-Sistem ini mempercepat verifikasi tugas dan memberikan transparansi perkembangan akademik kepada orang tua melalui notifikasi otomatis.
-
-c. Manajemen Sumber Daya
-Saya menggunakan arsitektur cloud (Vercel) dan version control (GitHub) untuk memusatkan pengelolaan aset digital tanpa perlu server fisik.
-
-d. Manajemen Risiko
-Data diamankan melalui sistem version control untuk pemulihan data dan enkripsi HTTPS otomatis guna menjaga privasi informasi.
-
-e. Pengukuran Kinerja
-Kinerja diukur berdasarkan kecepatan deployment otomatis dan efektivitas pengiriman notifikasi status tugas kepada orang tua.
-
-Rencana Pengembangan (Next Development)
-Migrasi Database: Mengalihkan data ke database relasional agar pengelolaan lebih terstruktur.
-
-Integrasi Bot WhatsApp: Mengotomatisasi laporan status tugas kepada orang tua melalui API.
-
-Dashboard Monitoring: Membangun dashboard untuk memantau status tugas secara real-time.</p>
-            <img src="Screenshot 2026-06-06 155425.png" alt="Jawaban 3" style="width:100%; border-radius:5px;">
-       
-</section>
+    </section>
 
     <section id="comment">
         <h2>Silakan Tinggalkan Pesan</h2>
@@ -94,5 +70,6 @@ Dashboard Monitoring: Membangun dashboard untuk memantau status tugas secara rea
             <button type="submit">Kirim Pesan</button>
         </form>
     </section>
+
 </body>
 </html>
