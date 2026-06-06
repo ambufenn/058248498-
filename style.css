@@ -32,21 +32,15 @@ section {
     border-radius: 10px;
 }
 
-/* TEXT */
+/* INI PENTING BIAR PARAGRAF ENAK */
 p {
     text-align: justify;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
-/* LIST */
-ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 6px;
-}
-
-/* IMAGE GENERAL */
+/* GAMBAR */
 img {
     max-width: 100%;
     height: auto;
@@ -54,18 +48,10 @@ img {
     margin-top: 10px;
 }
 
-/* BOX IMAGE SMALL */
+/* BOX IMAGE BIAR TIDAK TERLALU BESAR */
 .box img {
     width: 60%;
     max-width: 350px;
-    display: block;
-    margin: 10px auto;
-}
-
-/* NEWS IMAGE */
-.news-pic {
-    width: 70%;
-    max-width: 400px;
     display: block;
     margin: 10px auto;
 }
@@ -80,6 +66,14 @@ img {
     margin: 10px auto;
 }
 
+/* NEWS */
+.news-pic {
+    width: 70%;
+    max-width: 400px;
+    display: block;
+    margin: 10px auto;
+}
+
 /* LINK */
 a {
     color: #d63384;
@@ -88,25 +82,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-/* FORM */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-input, textarea {
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-}
-
-button {
-    background: #ff69b4;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
 }
