@@ -1,72 +1,57 @@
 /* Pengaturan Dasar */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 20px;
     color: #333;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #f4f7f6;
 }
 
-/* Styling Bagian Jawaban */
+/* Styling Box Konten */
 .box {
     border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-h2 {
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
+h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+h3 { color: #2980b9; margin-top: 0; }
+
+img { max-width: 100%; height: auto; display: block; margin: 15px auto; border-radius: 6px; }
+
+/* Section Komentar */
+#comment {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-h3 {
-    color: #2980b9;
-    margin-top: 0;
-}
+#comment h2 { text-align: center; border-bottom: none; }
 
-/* Memastikan gambar tidak keluar dari layar */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 15px 0;
-    border-radius: 4px;
-}
-
-/* Styling Form agar rapi */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-input, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+form { display: flex; flex-direction: column; gap: 15px; }
+input, textarea { padding: 12px; border: 1px solid #ccc; border-radius: 6px; width: 100%; box-sizing: border-box; }
+textarea { min-height: 120px; resize: vertical; }
 
 button {
-    padding: 10px;
-    background-color: #3498db;
+    padding: 12px;
+    background-color: #2c3e50;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-button:hover {
-    background-color: #2980b9;
-}
-
-/* Navigasi */
-nav h1 {
-    font-size: 1.5rem;
-    color: #2c3e50;
-}
+button:hover { background-color: #34495e; }
