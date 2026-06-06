@@ -1,85 +1,72 @@
+/* Pengaturan Dasar */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background: #ffe4ec;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
     color: #333;
-    line-height: 1.7;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* NAV */
-nav {
-    background: #ffb6c1;
-    text-align: center;
-    padding: 15px;
-    color: white;
-}
-
-/* SECTION */
-section {
-    width: 90%;
-    max-width: 900px;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-}
-
-/* BOX */
+/* Styling Bagian Jawaban */
 .box {
+    border: 1px solid #ddd;
+    padding: 20px;
     margin-bottom: 20px;
-    padding: 15px;
-    background: #fff5f7;
-    border-radius: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
 }
 
-/* INI PENTING BIAR PARAGRAF ENAK */
-p {
-    text-align: justify;
-    white-space: normal;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
 }
 
-/* GAMBAR */
+h3 {
+    color: #2980b9;
+    margin-top: 0;
+}
+
+/* Memastikan gambar tidak keluar dari layar */
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-/* BOX IMAGE BIAR TIDAK TERLALU BESAR */
-.box img {
-    width: 60%;
-    max-width: 350px;
     display: block;
-    margin: 10px auto;
+    margin: 15px 0;
+    border-radius: 4px;
 }
 
-/* PROFILE */
-.profile-pic {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-    margin: 10px auto;
+/* Styling Form agar rapi */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-/* NEWS */
-.news-pic {
-    width: 70%;
-    max-width: 400px;
-    display: block;
-    margin: 10px auto;
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-/* LINK */
-a {
-    color: #d63384;
-    text-decoration: none;
+button {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-a:hover {
-    text-decoration: underline;
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Navigasi */
+nav h1 {
+    font-size: 1.5rem;
+    color: #2c3e50;
 }
