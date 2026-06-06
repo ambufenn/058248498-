@@ -1,30 +1,30 @@
-/* Pengaturan Dasar */
+/* Pengaturan Dasar - Baby Pink Background */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.7;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 20px;
-    color: #333;
+    color: #4a4a4a;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #f4f7f6;
+    background-color: #ffe4e1; /* Warna Baby Pink */
 }
 
 /* Styling Box Konten */
 .box {
-    border: 1px solid #ddd;
+    border: 1px solid #ffb6c1;
     padding: 25px;
     margin-bottom: 25px;
-    border-radius: 12px;
+    border-radius: 15px;
     background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(255, 182, 193, 0.3);
 }
 
-h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-h3 { color: #2980b9; margin-top: 0; }
+h2 { color: #d63384; border-bottom: 2px solid #ffb6c1; padding-bottom: 10px; }
+h3 { color: #c2185b; margin-top: 0; }
 
-img { max-width: 100%; height: auto; display: block; margin: 15px auto; border-radius: 6px; }
+img { max-width: 100%; height: auto; display: block; margin: 15px auto; border-radius: 10px; }
 
 /* Section Komentar */
 #comment {
@@ -32,26 +32,23 @@ img { max-width: 100%; height: auto; display: block; margin: 15px auto; border-r
     margin: 40px auto;
     padding: 30px;
     background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 2px solid #ffb6c1;
+    border-radius: 15px;
 }
 
-#comment h2 { text-align: center; border-bottom: none; }
+#comment h2 { text-align: center; border-bottom: none; color: #d63384; }
 
 form { display: flex; flex-direction: column; gap: 15px; }
-input, textarea { padding: 12px; border: 1px solid #ccc; border-radius: 6px; width: 100%; box-sizing: border-box; }
-textarea { min-height: 120px; resize: vertical; }
+input, textarea { padding: 12px; border: 1px solid #ffb6c1; border-radius: 8px; }
+textarea { min-height: 120px; }
 
 button {
     padding: 12px;
-    background-color: #2c3e50;
+    background-color: #d63384;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
-    transition: 0.3s;
 }
-
-button:hover { background-color: #34495e; }
+button:hover { background-color: #c2185b; }
