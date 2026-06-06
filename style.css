@@ -6,6 +6,14 @@ body {
     line-height: 1.7;
 }
 
+/* NAV */
+nav {
+    background: #ffb6c1;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
 /* SECTION */
 section {
     width: 90%;
@@ -14,52 +22,47 @@ section {
     background: white;
     padding: 20px;
     border-radius: 12px;
-
-    /* penting: biar tidak ada clipping */
-    overflow: visible;
 }
 
-/* BOX JAWABAN */
+/* BOX */
 .box {
     margin-bottom: 20px;
     padding: 15px;
     background: #fff5f7;
     border-radius: 10px;
-
-    /* INI KUNCI UTAMA BIAR TIDAK KEPAKSA POTONG */
-    height: auto;
-    overflow: visible;
 }
 
-/* PARAGRAF AMAN FULL */
+/* TEXT */
 p {
     text-align: justify;
-
-    /* ini penting banget */
-    white-space: normal;
-    overflow-wrap: break-word;
-    word-break: normal;
-
-    margin-bottom: 10px;
 }
 
-/* GAMBAR BOX */
+/* LIST */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* IMAGE GENERAL */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* BOX IMAGE SMALL */
 .box img {
     width: 60%;
     max-width: 350px;
     display: block;
     margin: 10px auto;
-    height: auto;
 }
 
-/* GAMBAR UMUM */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* NEWS */
+/* NEWS IMAGE */
 .news-pic {
     width: 70%;
     max-width: 400px;
@@ -81,6 +84,10 @@ img {
 a {
     color: #d63384;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* FORM */
